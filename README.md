@@ -1,2 +1,39 @@
-# BaxterMovementTest
-Testing of movement algorithms on the Baxter robot
+# Baxter
+
+This repository contains scripts to support the [Baxter Research Robot](http://www.rethinkrobotics.com/baxter-research-robot/).
+The scripts are based on information provided on the [Baxter Research Robot Wiki](http://sdk.rethinkrobotics.com/wiki/Main_Page).
+
+More specific:
+This repository contains scripts to test different movement algorithms on the Baxter robot.
+The scripts create .csv files as output to be analysed further in for example microsoft Excel
+
+## Installation
+
+#NOTE: To run these scripts with the Baxter repository you must have acces to the following private repository: https://github.com/RethinkRobotics/baxter_simulator
+Follow the instructions in https://github.com/dortmans/baxter/blob/master/README.md
+of the https://github.com/dortmans/baxter    repository.
+
+After that has been done clone this repository:
+
+    cd ~
+    git clone https://github.com/Sannoso/BaxterMovementTest
+
+Then make the scripts executable:
+
+    cd ~/BaxterMovementTest
+    chmod +x *.bash
+
+## Using the scripts
+
+Start the simulator in a terminal:
+    cd ~/baxter
+    ./start_simulator.bash
+
+Then open a new terminal and start the setup script with an additional `sim` argument:
+    cd ~/baxter
+    ./setup.bash sim
+
+After that the scripts of this repo can be ran
+
+
+#Dear reader, English is not my native language if you see any spelling or grammar errors please point them out to me so I can correct them and improve my skills in English.
