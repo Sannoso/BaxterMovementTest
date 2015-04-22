@@ -1,5 +1,8 @@
 # Baxter
 
+Parts of this Readme text are copied from the Readme of the baxter repository from the github user dortmans.
+Check out  https://github.com/dortmans/baxter   if interested.
+
 This repository contains scripts to support the [Baxter Research Robot](http://www.rethinkrobotics.com/baxter-research-robot/).
 The scripts are based on information provided on the [Baxter Research Robot Wiki](http://sdk.rethinkrobotics.com/wiki/Main_Page).
 

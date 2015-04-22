@@ -1,0 +1,2 @@
+movetest
+-DCATKIN_DEVEL_PREFIX=/home/baxter/BaxterMovementTest/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/baxter/BaxterMovementTest/catkin_ws/install -G Unix Makefiles
