@@ -16,7 +16,8 @@ int main(int argc, char **argv)
    * other part of the ROS system.
    */
   ros::init(argc, argv, "Movetest_Node");
-  if(argc != 1_
+  ROS_INFO("Booting the Movetest_Node, made by Sander Ruben");
+  if(argc != 1)
   {
 	ROS_INFO("usage of the Movetest_Node: <# of iterations>");
 	return 1;

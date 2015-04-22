@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "movetest")
-set(movetest_MAINTAINER "baxter <baxter@todo.todo>")
+set(movetest_MAINTAINER "Sander Ruben <sanderruben@live.nl>")
 set(movetest_DEPRECATED "")
 set(movetest_VERSION "0.0.0")
 set(movetest_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
