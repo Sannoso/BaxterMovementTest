@@ -28,10 +28,15 @@ Then make the scripts executable:
 Start the simulator in a terminal:
     cd ~/baxter
     ./start_simulator.bash
+#wait for the terminal to say [ INFO] [<timestamp walltime>, <timestamp2>]: Gravity compensation was turned off
+#this can take a minut or two. You should only proceed after that output
 
 Then open a new terminal and start the setup script with an additional `sim` argument:
     cd ~/baxter
     ./setup.bash sim
+    rosrun baxter_tools enable_robot.py -e
+#it should return: [INFO] [WallTime: 1429532706.734450] [40.801000] Robot Enabled
+    rosrun baxter_interface joint_trajectory_action_server.py
 
 After that the scripts of this repo can be ran in a third terminal
 
