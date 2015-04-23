@@ -258,10 +258,18 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory movetest
 
 # Convenience name for "all" pass in the directory.
-movetest/all:
+movetest/all: movetest/CMakeFiles/movetest_generate_messages.dir/all
 .PHONY : movetest/all
 
 # Convenience name for "clean" pass in the directory.
+movetest/clean: movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/clean
+movetest/clean: movetest/CMakeFiles/movetest_gencpp.dir/clean
+movetest/clean: movetest/CMakeFiles/movetest_generate_messages.dir/clean
+movetest/clean: movetest/CMakeFiles/movetest_generate_messages_cpp.dir/clean
+movetest/clean: movetest/CMakeFiles/movetest_generate_messages_lisp.dir/clean
+movetest/clean: movetest/CMakeFiles/movetest_generate_messages_py.dir/clean
+movetest/clean: movetest/CMakeFiles/movetest_genlisp.dir/clean
+movetest/clean: movetest/CMakeFiles/movetest_genpy.dir/clean
 movetest/clean: movetest/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 movetest/clean: movetest/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 movetest/clean: movetest/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -276,6 +284,263 @@ movetest/clean: movetest/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Convenience name for "preinstall" pass in the directory.
 movetest/preinstall:
 .PHONY : movetest/preinstall
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/all:
+	$(MAKE) -f movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/build.make movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/build.make movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 
+	@echo "Built target _movetest_generate_messages_check_deps_Coordinate"
+.PHONY : movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/rule
+
+# Convenience name for target.
+_movetest_generate_messages_check_deps_Coordinate: movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/rule
+.PHONY : _movetest_generate_messages_check_deps_Coordinate
+
+# clean rule for target.
+movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/build.make movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/clean
+.PHONY : movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/movetest_gencpp.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/movetest_gencpp.dir/all: movetest/CMakeFiles/movetest_generate_messages_cpp.dir/all
+	$(MAKE) -f movetest/CMakeFiles/movetest_gencpp.dir/build.make movetest/CMakeFiles/movetest_gencpp.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/movetest_gencpp.dir/build.make movetest/CMakeFiles/movetest_gencpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 
+	@echo "Built target movetest_gencpp"
+.PHONY : movetest/CMakeFiles/movetest_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/movetest_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/movetest_gencpp.dir/rule
+
+# Convenience name for target.
+movetest_gencpp: movetest/CMakeFiles/movetest_gencpp.dir/rule
+.PHONY : movetest_gencpp
+
+# clean rule for target.
+movetest/CMakeFiles/movetest_gencpp.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/movetest_gencpp.dir/build.make movetest/CMakeFiles/movetest_gencpp.dir/clean
+.PHONY : movetest/CMakeFiles/movetest_gencpp.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/movetest_gencpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/movetest_generate_messages.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/movetest_generate_messages.dir/all: movetest/CMakeFiles/movetest_generate_messages_py.dir/all
+movetest/CMakeFiles/movetest_generate_messages.dir/all: movetest/CMakeFiles/movetest_generate_messages_cpp.dir/all
+movetest/CMakeFiles/movetest_generate_messages.dir/all: movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages.dir/build.make movetest/CMakeFiles/movetest_generate_messages.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages.dir/build.make movetest/CMakeFiles/movetest_generate_messages.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 
+	@echo "Built target movetest_generate_messages"
+.PHONY : movetest/CMakeFiles/movetest_generate_messages.dir/all
+
+# Include target in all.
+all: movetest/CMakeFiles/movetest_generate_messages.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/movetest_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/movetest_generate_messages.dir/rule
+
+# Convenience name for target.
+movetest_generate_messages: movetest/CMakeFiles/movetest_generate_messages.dir/rule
+.PHONY : movetest_generate_messages
+
+# clean rule for target.
+movetest/CMakeFiles/movetest_generate_messages.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages.dir/build.make movetest/CMakeFiles/movetest_generate_messages.dir/clean
+.PHONY : movetest/CMakeFiles/movetest_generate_messages.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/movetest_generate_messages.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/movetest_generate_messages_cpp.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/movetest_generate_messages_cpp.dir/all: movetest/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+movetest/CMakeFiles/movetest_generate_messages_cpp.dir/all: movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/all
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_cpp.dir/build.make movetest/CMakeFiles/movetest_generate_messages_cpp.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_cpp.dir/build.make movetest/CMakeFiles/movetest_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles  3
+	@echo "Built target movetest_generate_messages_cpp"
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/movetest_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+movetest_generate_messages_cpp: movetest/CMakeFiles/movetest_generate_messages_cpp.dir/rule
+.PHONY : movetest_generate_messages_cpp
+
+# clean rule for target.
+movetest/CMakeFiles/movetest_generate_messages_cpp.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_cpp.dir/build.make movetest/CMakeFiles/movetest_generate_messages_cpp.dir/clean
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/movetest_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/movetest_generate_messages_lisp.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all: movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/all
+movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all: movetest/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_lisp.dir/build.make movetest/CMakeFiles/movetest_generate_messages_lisp.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_lisp.dir/build.make movetest/CMakeFiles/movetest_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles  4
+	@echo "Built target movetest_generate_messages_lisp"
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/movetest_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+movetest_generate_messages_lisp: movetest/CMakeFiles/movetest_generate_messages_lisp.dir/rule
+.PHONY : movetest_generate_messages_lisp
+
+# clean rule for target.
+movetest/CMakeFiles/movetest_generate_messages_lisp.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_lisp.dir/build.make movetest/CMakeFiles/movetest_generate_messages_lisp.dir/clean
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/movetest_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/movetest_generate_messages_py.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/movetest_generate_messages_py.dir/all: movetest/CMakeFiles/std_msgs_generate_messages_py.dir/all
+movetest/CMakeFiles/movetest_generate_messages_py.dir/all: movetest/CMakeFiles/_movetest_generate_messages_check_deps_Coordinate.dir/all
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_py.dir/build.make movetest/CMakeFiles/movetest_generate_messages_py.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_py.dir/build.make movetest/CMakeFiles/movetest_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles  5 6
+	@echo "Built target movetest_generate_messages_py"
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/movetest_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_py.dir/rule
+
+# Convenience name for target.
+movetest_generate_messages_py: movetest/CMakeFiles/movetest_generate_messages_py.dir/rule
+.PHONY : movetest_generate_messages_py
+
+# clean rule for target.
+movetest/CMakeFiles/movetest_generate_messages_py.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages_py.dir/build.make movetest/CMakeFiles/movetest_generate_messages_py.dir/clean
+.PHONY : movetest/CMakeFiles/movetest_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/movetest_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/movetest_genlisp.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/movetest_genlisp.dir/all: movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all
+	$(MAKE) -f movetest/CMakeFiles/movetest_genlisp.dir/build.make movetest/CMakeFiles/movetest_genlisp.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/movetest_genlisp.dir/build.make movetest/CMakeFiles/movetest_genlisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 
+	@echo "Built target movetest_genlisp"
+.PHONY : movetest/CMakeFiles/movetest_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/movetest_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/movetest_genlisp.dir/rule
+
+# Convenience name for target.
+movetest_genlisp: movetest/CMakeFiles/movetest_genlisp.dir/rule
+.PHONY : movetest_genlisp
+
+# clean rule for target.
+movetest/CMakeFiles/movetest_genlisp.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/movetest_genlisp.dir/build.make movetest/CMakeFiles/movetest_genlisp.dir/clean
+.PHONY : movetest/CMakeFiles/movetest_genlisp.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/movetest_genlisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target movetest/CMakeFiles/movetest_genpy.dir
+
+# All Build rule for target.
+movetest/CMakeFiles/movetest_genpy.dir/all: movetest/CMakeFiles/movetest_generate_messages_py.dir/all
+	$(MAKE) -f movetest/CMakeFiles/movetest_genpy.dir/build.make movetest/CMakeFiles/movetest_genpy.dir/depend
+	$(MAKE) -f movetest/CMakeFiles/movetest_genpy.dir/build.make movetest/CMakeFiles/movetest_genpy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 
+	@echo "Built target movetest_genpy"
+.PHONY : movetest/CMakeFiles/movetest_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+movetest/CMakeFiles/movetest_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 0
+.PHONY : movetest/CMakeFiles/movetest_genpy.dir/rule
+
+# Convenience name for target.
+movetest_genpy: movetest/CMakeFiles/movetest_genpy.dir/rule
+.PHONY : movetest_genpy
+
+# clean rule for target.
+movetest/CMakeFiles/movetest_genpy.dir/clean:
+	$(MAKE) -f movetest/CMakeFiles/movetest_genpy.dir/build.make movetest/CMakeFiles/movetest_genpy.dir/clean
+.PHONY : movetest/CMakeFiles/movetest_genpy.dir/clean
+
+# clean rule for target.
+clean: movetest/CMakeFiles/movetest_genpy.dir/clean
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target movetest/CMakeFiles/roscpp_generate_messages_cpp.dir

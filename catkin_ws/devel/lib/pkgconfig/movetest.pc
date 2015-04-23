@@ -3,6 +3,6 @@ prefix=/home/baxter/BaxterMovementTest/catkin_ws/devel
 Name: movetest
 Description: Description of movetest
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/baxter/BaxterMovementTest/catkin_ws/devel/include
 Libs: -L/home/baxter/BaxterMovementTest/catkin_ws/devel/lib 
-Requires: 
+Requires: message_runtime

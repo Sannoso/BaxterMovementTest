@@ -49,7 +49,7 @@ find_package(
  add_message_files(
    FILES
    Coordinate.msg
-# )
+ )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
