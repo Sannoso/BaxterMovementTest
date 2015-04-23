@@ -1,7 +1,7 @@
-double xcoordinate
-double ycoordinate
-double zcoordinate
+uint64 xcoordinate
+uint64 ycoordinate
+uint64 zcoordinate
 
-double roll
-double pitch
-double yaw
+uint64 roll
+uint64 pitch
+uint64 yaw
