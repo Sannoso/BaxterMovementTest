@@ -164,6 +164,20 @@ _movetest_generate_messages_check_deps_Coordinate/fast:
 .PHONY : _movetest_generate_messages_check_deps_Coordinate/fast
 
 # Convenience name for target.
+movetest/CMakeFiles/movetest.dir/rule:
+	cd /home/baxter/BaxterMovementTest/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest.dir/rule
+.PHONY : movetest/CMakeFiles/movetest.dir/rule
+
+# Convenience name for target.
+movetest: movetest/CMakeFiles/movetest.dir/rule
+.PHONY : movetest
+
+# fast build rule for target.
+movetest/fast:
+	cd /home/baxter/BaxterMovementTest/catkin_ws/build && $(MAKE) -f movetest/CMakeFiles/movetest.dir/build.make movetest/CMakeFiles/movetest.dir/build
+.PHONY : movetest/fast
+
+# Convenience name for target.
 movetest/CMakeFiles/movetest_gencpp.dir/rule:
 	cd /home/baxter/BaxterMovementTest/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 movetest/CMakeFiles/movetest_gencpp.dir/rule
 .PHONY : movetest/CMakeFiles/movetest_gencpp.dir/rule
@@ -387,6 +401,30 @@ std_msgs_generate_messages_py/fast:
 	cd /home/baxter/BaxterMovementTest/catkin_ws/build && $(MAKE) -f movetest/CMakeFiles/std_msgs_generate_messages_py.dir/build.make movetest/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/movetest.o: src/movetest.cpp.o
+.PHONY : src/movetest.o
+
+# target to build an object file
+src/movetest.cpp.o:
+	cd /home/baxter/BaxterMovementTest/catkin_ws/build && $(MAKE) -f movetest/CMakeFiles/movetest.dir/build.make movetest/CMakeFiles/movetest.dir/src/movetest.cpp.o
+.PHONY : src/movetest.cpp.o
+
+src/movetest.i: src/movetest.cpp.i
+.PHONY : src/movetest.i
+
+# target to preprocess a source file
+src/movetest.cpp.i:
+	cd /home/baxter/BaxterMovementTest/catkin_ws/build && $(MAKE) -f movetest/CMakeFiles/movetest.dir/build.make movetest/CMakeFiles/movetest.dir/src/movetest.cpp.i
+.PHONY : src/movetest.cpp.i
+
+src/movetest.s: src/movetest.cpp.s
+.PHONY : src/movetest.s
+
+# target to generate assembly for a file
+src/movetest.cpp.s:
+	cd /home/baxter/BaxterMovementTest/catkin_ws/build && $(MAKE) -f movetest/CMakeFiles/movetest.dir/build.make movetest/CMakeFiles/movetest.dir/src/movetest.cpp.s
+.PHONY : src/movetest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -399,6 +437,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... movetest"
 	@echo "... movetest_gencpp"
 	@echo "... movetest_generate_messages"
 	@echo "... movetest_generate_messages_cpp"
@@ -417,6 +456,9 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/movetest.o"
+	@echo "... src/movetest.i"
+	@echo "... src/movetest.s"
 .PHONY : help
 
 

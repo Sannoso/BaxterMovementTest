@@ -241,6 +241,19 @@ _movetest_generate_messages_check_deps_Coordinate/fast:
 .PHONY : _movetest_generate_messages_check_deps_Coordinate/fast
 
 #=============================================================================
+# Target rules for targets named movetest
+
+# Build rule for target.
+movetest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 movetest
+.PHONY : movetest
+
+# fast build rule for target.
+movetest/fast:
+	$(MAKE) -f movetest/CMakeFiles/movetest.dir/build.make movetest/CMakeFiles/movetest.dir/build
+.PHONY : movetest/fast
+
+#=============================================================================
 # Target rules for targets named movetest_gencpp
 
 # Build rule for target.
@@ -468,6 +481,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _movetest_generate_messages_check_deps_Coordinate"
+	@echo "... movetest"
 	@echo "... movetest_gencpp"
 	@echo "... movetest_generate_messages"
 	@echo "... movetest_generate_messages_cpp"
