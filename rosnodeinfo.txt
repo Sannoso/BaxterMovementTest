@@ -1,0 +1,24 @@
+#this file has been retrieved after the rosnode info command:
+# $rosnode info /Movetest_Node >> rosnodeinfo.txt
+
+--------------------------------------------------------------------------------
+Node [/Movetest_Node]
+Publications: 
+ * /chatter [std_msgs/String]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /Movetest_Node/set_logger_level
+ * /Movetest_Node/get_loggers
+
+
+contacting node http://baxter-MS-AE3111:41233/ ...
+Pid: 24370
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+
