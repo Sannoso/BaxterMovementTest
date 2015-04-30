@@ -388,9 +388,9 @@ clean: movetest/CMakeFiles/movetest_gencpp.dir/clean
 # Target rules for target movetest/CMakeFiles/movetest_generate_messages.dir
 
 # All Build rule for target.
+movetest/CMakeFiles/movetest_generate_messages.dir/all: movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all
 movetest/CMakeFiles/movetest_generate_messages.dir/all: movetest/CMakeFiles/movetest_generate_messages_py.dir/all
 movetest/CMakeFiles/movetest_generate_messages.dir/all: movetest/CMakeFiles/movetest_generate_messages_cpp.dir/all
-movetest/CMakeFiles/movetest_generate_messages.dir/all: movetest/CMakeFiles/movetest_generate_messages_lisp.dir/all
 	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages.dir/build.make movetest/CMakeFiles/movetest_generate_messages.dir/depend
 	$(MAKE) -f movetest/CMakeFiles/movetest_generate_messages.dir/build.make movetest/CMakeFiles/movetest_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/baxter/BaxterMovementTest/catkin_ws/build/CMakeFiles 

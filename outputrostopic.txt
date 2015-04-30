@@ -1,0 +1,43 @@
+#this has been retrieved after the rostopic info command:
+#  $rostopic info /Movetestouput
+
+Type: std_msgs/String
+
+Publishers: 
+ * /Movetest_Node (http://baxter-MS-AE3111:44740/)
+
+Subscribers: None
+
+#this has been retrieved after the rostopic echo command:
+#  $rostopic echo /Movetestoutput
+
+data: Testmove 1 took X seconds
+---
+data: Testmove 2 took X seconds
+---
+data: Testmove 3 took X seconds
+---
+data: Testmove 4 took X seconds
+---
+data: Testmove 5 took X seconds
+---
+data: Testmove 6 took X seconds
+---
+data: Testmove 7 took X seconds
+---
+data: Testmove 8 took X seconds
+---
+data: Testmove 9 took X seconds
+---
+data: Testmove 10 took X seconds
+---
+data: Testmove 11 took X seconds
+---
+data: Testmove 12 took X seconds
+---
+data: Testmove 13 took X seconds
+---
+data: Testmove 14 took X seconds
+---
+data: Testmove 15 took X seconds
+---

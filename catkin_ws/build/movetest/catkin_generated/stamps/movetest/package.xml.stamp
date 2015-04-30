@@ -13,8 +13,8 @@
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
   <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
-  <license>THE BEER-WARE LICENSE. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return. --Sander Ruben</license>
-
+  <!-- <license>THE BEER-WARE LICENSE. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return. -Sander Ruben</license> -->
+  <license>I don't really know. Do with this whatever you like, but at own risk. -Sander Ruben </license>
 
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
