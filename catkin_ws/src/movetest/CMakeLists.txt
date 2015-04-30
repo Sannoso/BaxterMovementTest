@@ -6,6 +6,7 @@ project(movetest)
 ## is used, also find other catkin packages
 find_package(
   catkin REQUIRED COMPONENTS
+  moveit_ros_planning_interface
   roscpp
   rospy
   std_msgs
@@ -167,3 +168,6 @@ include_directories(
 add_executable(movetest src/movetest.cpp)
 target_link_libraries(movetest ${catkin_LIBRARIES})
 add_dependencies(movetest movetest_gencpp)
+
+
+#added this to make #include <moveit/move_group_interface/move_group.h> work
