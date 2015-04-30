@@ -13,10 +13,11 @@ int main(int argc, char **argv)
 	ROS_INFO("usage of the Movetest_Node: <# of iterations>");
 	return 1;
   }
-  ROS_INFO("%s %s %s %s", argv[0]," is executed \n the test will be executed a total of ", argv[1]," times \n");
+//  ROS_INFO("%s %s %s %s", argv[0]," is executed \n the test will be executed a total of ", argv[1]," times \n");
+  ROS_INFO("%s %s", argv[0]," is executed \n the test will be executed a total of ");
   //store requested amount of tests in an integer
-  static int requestamountoftests = atoi(argv[1]);
-  ROS_INFO("%s %o","argv[1] als integever is: ", requestamountoftests);
+  static int requestednumberoftests = atoi(argv[1]);
+  ROS_INFO("%o %s", requestednumberoftests, " times \n");
 
   ros::NodeHandle n; //creating NodeHandle called n
   /**
@@ -40,13 +41,11 @@ int main(int argc, char **argv)
 
   ros::Rate loop_rate(10);
 
-  /**
-   * A count of how many messages we have sent. This is used to create
-   * a unique string for each message.
-   */
   int count = 0;
-  while (ros::ok())
+  while (ros::ok() & count < requestednumberoftests)
   {
+    //CALL IK SERVICE HERE
+
     /**
      * This is a message object. You stuff it with data, and then publish it.
      */
